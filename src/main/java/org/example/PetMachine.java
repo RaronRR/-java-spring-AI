@@ -2,10 +2,12 @@ package org.example;
 
 public class PetMachine {
 
-    private boolean clean;
-    private int water;
-    private int shampoo;
+    private boolean clean = true;
+    private int water = 30;
+    private int shampoo = 10;
     private Pet pet;
+
+
 
     public void takeShower() {
         if (this.pet == null) {
@@ -15,7 +17,7 @@ public class PetMachine {
 
         this.water -= 10;
         this.shampoo -= 2;
-        ;
+
         pet.setClean(true);
         System.out.println(pet.getName() + " esta limpo");
     }
